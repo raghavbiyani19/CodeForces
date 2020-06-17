@@ -1,0 +1,18 @@
+t=int(input())
+while(t!=0):
+    a,b=map(int,input().split())
+    if(a<b):
+        temp=((a*2)**2)**0.5
+        if(temp>b):
+            print((a*2)**2)
+        else:
+            print(b**2)
+    elif(b<a):
+        temp=((b*2)**2)**0.5
+        if(temp>a):
+            print((b*2)**2)
+        else:
+            print(a**2)
+    else:
+        print((a*2)**2)
+    t-=1
