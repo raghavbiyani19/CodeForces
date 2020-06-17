@@ -1,0 +1,20 @@
+a=int(input())
+b=int(input())
+if(a>b):
+    a,b=b,a
+tire=0
+tempA=1
+tempB=1
+turn=0
+while(a<b):
+    if(turn==0):
+        a+=1
+        tire+=tempA
+        turn=1
+        tempA+=1
+    else:
+        b-=1
+        tire+=tempB
+        turn=0
+        tempB+=1
+print(tire)
