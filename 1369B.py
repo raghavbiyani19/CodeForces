@@ -1,0 +1,11 @@
+t=int(input())
+while(t):
+    n=int(input())
+    s=input()
+    firstOne=s.find('1')
+    lastZero=s.rfind('0')
+    if(firstOne>lastZero):
+        print(s)
+    else:
+        print(s[0:firstOne]+s[lastZero:])
+    t-=1
