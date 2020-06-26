@@ -1,0 +1,22 @@
+t=int(input())
+while(t):
+    s=str(input())
+    n=len(s)
+    dist=0
+    ans=-1
+    for i in range(n):
+        if(i<n-1):
+            if(s[i]=="R"):
+                ans=max(ans,dist+1)
+                dist=0
+            else:
+                dist+=1
+        else:
+            if(s[i]=="R"):
+                ans=max(ans,dist+1)
+                dist=0
+            else:
+                dist+=1
+                ans=max(ans,dist+1)
+    print(ans)
+    t-=1
