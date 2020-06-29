@@ -1,0 +1,9 @@
+t=int(input())
+while(t!=0):
+    x,y,n=map(int,input().split())
+    q=n//x
+    val=(q*x)+y
+    while(val>n):
+        val-=x
+    print(val)
+    t-=1
